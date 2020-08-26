@@ -8,6 +8,7 @@ class React extends Preset
     {
         static::ensureComponentDirectoryExists();
         static::updatePackages();
+        static::updatePackages(false);
         static::updateWebpackConfiguration();
         static::updateBootstrapping();
         static::updateComponent();
@@ -17,17 +18,9 @@ class React extends Preset
         static::updateBableRc();
     }
 
-    protected static function updatePackageArray(array $packages)
+    protected static function updatePackageArray(array $packages, $configurationKey)
     {
-        return [
-                '@babel/plugin-proposal-optional-chaining' => '^7.9.0',
-                '@babel/plugin-syntax-dynamic-import' => '^7.8.3',
-                '@babel/preset-react' => '^7.0.0',
-                'react' => '^16.2.0',
-                'react-dom' => '^16.2.0',
-                'cross-env' => '^7.0',
-                'tailwindcss' => '^1.4',
-            ] + $packages;
+        return array_merge(self::packages()[$configurationKey], $packages);
     }
 
     protected static function updateWebpackConfiguration()
@@ -58,5 +51,24 @@ class React extends Preset
     protected static function updateBableRc()
     {
         copy(__DIR__ . '/stubs/.babelrc', base_path('.babelrc'));
+    }
+
+    public static function packages()
+    {
+        return [
+            'devDependencies' => [
+                '@babel/plugin-proposal-optional-chaining' => '^7.9.0',
+                '@babel/plugin-syntax-dynamic-import' => '^7.8.3',
+                '@babel/preset-react' => '^7.0.0',
+                'react' => '^16.2.0',
+                'react-dom' => '^16.2.0',
+                'cross-env' => '^7.0',
+                'tailwindcss' => '^1.4',
+            ],
+            'dependencies' => [
+                '@inertiajs/inertia' => '^0.2.1',
+                '@inertiajs/inertia-react' => '^0.2.0'
+            ]
+        ];
     }
 }

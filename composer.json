@@ -28,6 +28,11 @@
             "UsrNotFound\\Ui\\": "src/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
