@@ -30,5 +30,5 @@ php artisan usnnotfound:rilt-preset
 - Code Splitting
 - Purge CSS
 
-#License
+# License
 The package is open-sourced software licensed under the MIT license.
