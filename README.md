@@ -1,6 +1,6 @@
 # Command to bootstrap RILT
 
-This preset add and configure `tailwindcss`, `react`, `inertiajs` to a Laravel application.
+This preset adds and configures `tailwindcss`, `react`, `inertiajs` for Laravel application.
 
 **To install this package**:
 
