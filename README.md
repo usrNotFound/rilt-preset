@@ -29,3 +29,6 @@ php artisan usnnotfound:rilt-preset
 - Assets Built Pipeline
 - Code Splitting
 - Purge CSS
+
+#License
+The package is open-sourced software licensed under the MIT license.
