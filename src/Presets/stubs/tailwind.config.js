@@ -6,16 +6,5 @@ module.exports = {
             './resources/**/*.js',
         ],
     },
-    theme: {
-        extend: {
-            minWidth: {
-                '56': '14rem',
-            }
-        },
-    },
-    variants: {
-        backgroundColor: ['responsive', 'hover', 'focus', 'disabled'],
-        textColor: ['responsive', 'hover', 'focus', 'disabled'],
-    },
     plugins: [],
 };
