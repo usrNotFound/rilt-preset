@@ -1,6 +1,6 @@
 <?php
 
-namespace ISeekplant\Ui;
+namespace UsrNotFound\Ui;
 
 use Illuminate\Support\ServiceProvider;
 
