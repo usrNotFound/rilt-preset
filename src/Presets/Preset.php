@@ -1,6 +1,6 @@
 <?php
 
-namespace ISeekplant\Ui\Presets;
+namespace UsrNotFound\Ui\Presets;
 
 use Illuminate\Filesystem\Filesystem;
 
