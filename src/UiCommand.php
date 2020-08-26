@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class UiCommand extends Command
 {
-    protected $signature = 'usnnotfound:rilt-preset';
+    protected $signature = 'usrnotfound:rilt-preset';
 
     protected $description = 'Front-end scaffolding for the application';
 
