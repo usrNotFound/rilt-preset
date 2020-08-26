@@ -23,11 +23,8 @@ class React extends Preset
                 '@babel/plugin-proposal-optional-chaining' => '^7.9.0',
                 '@babel/plugin-syntax-dynamic-import' => '^7.8.3',
                 '@babel/preset-react' => '^7.0.0',
-                'classnames' => '^2.2.6',
                 'react' => '^16.2.0',
                 'react-dom' => '^16.2.0',
-                'react-spinners' => '^0.8.1',
-                'react-paginate' => '^6.3.2',
                 'cross-env' => '^7.0',
                 'tailwindcss' => '^1.4',
             ] + $packages;
