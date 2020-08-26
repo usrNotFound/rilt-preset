@@ -1,11 +1,11 @@
-# Command to bootstrap Tailwind, React for laravel project
+# Command to bootstrap RILT
 
-`composer require iseekplant/bootstrap-ui`
+`composer require usrnotfound/rilt-preset`
 
 **Then, run the following command**:
 
 ```bash
-php artisan iseekplant:bootstrap-ui
+php artisan usnnotfound:rilt-preset
 ```
 
 # Supports

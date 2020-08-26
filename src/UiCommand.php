@@ -1,12 +1,12 @@
 <?php
 
-namespace ISeekplant\Ui;
+namespace UsrNotFound\Ui;
 
 use Illuminate\Console\Command;
 
 class UiCommand extends Command
 {
-    protected $signature = 'iseekplant:bootstrap-ui';
+    protected $signature = 'usnnotfound:rilt-preset';
 
     protected $description = 'Front-end scaffolding for the application';
 

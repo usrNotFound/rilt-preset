@@ -1,5 +1,5 @@
 {
-    "name": "usrNotfound/rilt-preset",
+    "name": "usrnotfound/rilt-preset",
     "authors": [
         {
             "name": "Kamal Chapagain",
@@ -25,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ISeekplant\\Ui\\": "src/"
+            "UsrNotFound\\Ui\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ISeekplant\\Ui\\UiServiceProvider"
+                "UsrNotFound\\Ui\\UiServiceProvider"
             ]
         }
     },
