@@ -1,11 +1,6 @@
 {
     "name": "usrnotfound/rilt-preset",
-    "authors": [
-        {
-            "name": "Kamal Chapagain",
-            "email": "k_chapagain@msn.com"
-        }
-    ],
+    "license": "MIT",
     "keywords": [
         "rilt",
         "laravel tailwind preset",
@@ -40,6 +35,5 @@
             ]
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true
 }
