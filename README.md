@@ -8,7 +8,7 @@ This preset adds and configures `tailwindcss`, `react`, `inertiajs` for Laravel 
 
 **To publish the configuration run the following command**:
 ```bash
-php artisan usnnotfound:rilt-preset
+php artisan usrnotfound:rilt-preset
 ```
 
 #What happens when I run the command? 
