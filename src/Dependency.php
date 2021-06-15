@@ -2,9 +2,9 @@
 
 namespace UsrNotFound\Ui;
 
-interface Package
+interface Dependency
 {
-    public const NPM_DEV_DEPENDENCY = [
+    public const NPM_DEV = [
         'autoprefixer' => '^10.2.4',
         'babel-jest' => '^26.6.3',
         '@babel/plugin-proposal-optional-chaining' => '^7.9.0',
@@ -25,9 +25,9 @@ interface Package
         'react-dom' => '^17.0.2',
     ];
 
-    public const NPM_DEPENDENCY = [];
+    public const NPM = [];
 
-    public const COMPOSER_DEPENDENCY = [
+    public const COMPOSER = [
         'inertiajs/inertia-laravel:^0.4.2'
     ];
 }

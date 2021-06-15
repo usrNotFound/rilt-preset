@@ -2,7 +2,7 @@
 
 namespace UsrNotFound\Ui\Presets;
 
-use UsrNotFound\Ui\Package;
+use UsrNotFound\Ui\Dependency;
 
 class React extends Preset
 {
@@ -41,8 +41,8 @@ class React extends Preset
     public static function dependencies()
     {
         return [
-            'devDependencies' => Package::NPM_DEV_DEPENDENCY,
-            'dependencies' => Package::NPM_DEPENDENCY
+            'devDependencies' => Dependency::NPM_DEV,
+            'dependencies' => Dependency::NPM
         ];
     }
 }

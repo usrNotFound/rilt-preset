@@ -30,7 +30,7 @@ class UiCommand extends Command
     public function installComposerDependency()
     {
         (new Process(
-            array_merge(['composer', 'require'], Package::COMPOSER_DEPENDENCY),
+            array_merge(['composer', 'require'], Dependency::COMPOSER),
             base_path(),
             ['COMPOSER_MEMORY_LIMIT' => '-1'])
         )
