@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss');
 
 let productionSourceMaps = false;
 
@@ -14,13 +13,13 @@ let productionSourceMaps = false;
  |
  */
 
-mix.sourceMaps(productionSourceMaps, 'eval-source-map')
-    .react('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .options({
-        processCssUrls: false,
-        postCss: [tailwindcss('tailwind.config.js')]
-    });
+mix.js('resources/js/app.js', 'public/js')
+    .postCss('resources/css/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ])
+    .sourceMaps(productionSourceMaps, 'eval-source-map');
 
 if (mix.inProduction()) {
     let ASSET_URL = process.env.ASSET_URL + '/';

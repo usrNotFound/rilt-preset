@@ -53,7 +53,6 @@ class Preset
     {
         tap(new Filesystem, function ($files) {
             $files->deleteDirectory(base_path('node_modules'));
-
             $files->delete(base_path('yarn.lock'));
         });
     }
